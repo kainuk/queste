@@ -61,7 +61,7 @@ set footer_classes = ' ' ~
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
   <nav class="{{ nav_classes }}">
-    <div class="{{ b5_top_container }} d-flex">
+    <div class="{{ b5_top_container }} border-bottom d-flex">
       {{ page.nav_branding }}
 
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -92,7 +92,7 @@ set footer_classes = ' ' ~
   %}
 
   {%
-  set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' )
+  set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-7' : 'col-12' )
    %}
 
 
@@ -110,7 +110,7 @@ set footer_classes = ' ' ~
         {{ page.content }}
       </div>
       {% if page.sidebar_second %}
-        <div class="order-3 {{ sidebar_second_classes }}">
+        <div class="order-3 {{ sidebar_second_classes }} border-start">
           {{ page.sidebar_second }}
         </div>
       {% endif %}
