@@ -5,8 +5,22 @@
 //$black: #000 !default;
 //$gray-700: #495057 !default;
 
-$blue: #003CC5 !default;
+$white: #ffffff;
 
+$theme-colors: (
+  "light":      #b0d8dc,
+  "dark":       #00769c,
+  "primary":    #981a26,
+  "secondary":  #083a57,
+  "info":       #366986,
+  "accent1":    #a8acb8,
+  "accent2":    #746c69,
+  "accent3":    #e79800,
+  "success":    #5ba000,
+  "warning":    #ffbe64,
+  "danger":     #f00065,
+);
+$primary: #981a26;
 //$cyan: #006170 !default;
 //$pink: #e21181 !default;
 //$green: #008a00 !default;
