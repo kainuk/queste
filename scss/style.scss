@@ -13,3 +13,23 @@ $headings-font-family: Oswald;
 
 // Include bootstrap.
 @import '../../../../themes/contrib/bootstrap5/scss/style';
+
+// Queste specific
+.region-nav-branding {
+  padding: 0 0.5rem;
+}
+
+.node__links {
+  float: right;
+}
+
+
+h2 a {
+  color: var(--#{$prefix}heading-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--#{$prefix}link-hover-color);
+    text-decoration: none;
+  }
+}
