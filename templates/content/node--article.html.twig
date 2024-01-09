@@ -75,17 +75,18 @@
   node.isSticky() ? 'node--sticky',
   not node.isPublished() ? 'node--unpublished',
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-  'py-4'
 ]
 %}
 {{ attach_library('bootstrap5/node') }}
 <article{{ attributes.addClass(classes) }}>
 
+  {{ content.field_image }}
+
   {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes.addClass(['px-lg-3','px-1','pb-2']) }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
+  {% if label %}
+    <h1{{ title_attributes.addClass(['px-lg-3','px-1','pb-2']) }}>
+     {{ label }}
+    </h1>
   {% endif %}
   {{ title_suffix }}
 
@@ -100,6 +101,7 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+    {{ content|without('field_image') }}
   </div>
+
 </article>
