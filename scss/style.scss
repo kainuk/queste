@@ -34,3 +34,14 @@ h2 a {
     text-decoration: none;
   }
 }
+
+// blocks only visible on the large screen
+@media (max-width: 992px) {
+  #block-queste-betreft {
+    display: none;
+  }
+  #block-queste-views-block-content-recent-block-1 {
+    display: none;
+  }
+}
+
