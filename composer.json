@@ -1,18 +1,18 @@
 {
-  "name": "drupal/bootstrap5",
-  "description": "Master theme using Bootstrap 5: powerful front-end framework for faster and easier web development.",
-  "type": "drupal-theme",
-  "license": "GPL-2.0-or-later",
-  "homepage": "https://www.drupal.org/project/bootstrap5",
-  "minimum-stability": "dev",
-  "authors": [
-    {
-      "name": "Vladimir Roudakov (vladimiraus)",
-      "homepage": "https://www.drupal.org/u/vladimiraus",
-      "role": "Maintainer"
+    "name": "drupal/queste",
+    "description": "Custom theme using Bootstrap 5:",
+    "type": "drupal-theme",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/kainuk/queste",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Klaas Eikelboom (kainuk)",
+            "homepage": "https://kainuk.it",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/bootstrap5": "*"
     }
-  ],
-  "support": {
-    "issues": "https://www.drupal.org/project/issues/bootstrap5"
-  }
 }
