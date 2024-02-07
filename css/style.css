@@ -14577,5 +14577,13 @@ h2 a:hover, .h2 a:hover {
     display: none;
   }
 }
+div.field--name-field-tags div.field__items {
+  display: flex;
+  font-family: Oswald;
+}
+
+div.field--name-field-tags div.field__item:nth-last-child(n+2)::after {
+  content: ", ";
+}
 
 /*# sourceMappingURL=style.css.map */
