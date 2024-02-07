@@ -12478,9 +12478,11 @@ a > .ck-content code {
     display: none;
   }
 }
-.ck-content div.field--name-field-tags div.field__items {
+.ck-content div.field--name-field-tags {
   display: flex;
   font-family: Oswald;
+  margin-left: auto;
+  margin-right: 0;
 }
 .ck-content div.field--name-field-tags div.field__item:nth-last-child(n+2)::after {
   content: ", ";
