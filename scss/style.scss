@@ -45,3 +45,14 @@ h2 a {
   }
 }
 
+// tabs
+
+div.field--name-field-tags div.field__items {
+  display: flex;
+  font-family: $headings-font-family;
+}
+
+div.field--name-field-tags div.field__item:nth-last-child(n + 2)::after {
+  content: ", ";
+}
+
